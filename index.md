@@ -6,7 +6,7 @@
 Es el concepto fundamental que se considera al hablar de __Teoría de la Categorización__ pues se trabaja con relaciones de conjuntos, los cuales son considerados __Tipos__.
 
 #### Tipos
-Estos `tipos`  si bien no representa a solo a un objeto, lo que hace es englobar a estas unidades representando las como una  Clase y de las cuales se relacionan con otros Tipos por las características que poseen ellas, además de que también establecen relación entre ellas por las similitudes que presentan.
+Estos `tipos`  si bien no representa a solo a un objeto, lo que hace es englobar a estas unidades representandolas como una  Clase y de las cuales se relacionan con otros Tipos por las características que poseen ellas, además de que también establecen relación entre ellas por las similitudes que presentan.
 
 ## Base de Datos
 
@@ -14,8 +14,9 @@ Una __Base de datos__ es un conjunto de información organizado y ordenados en t
 
 ## Esquema de tipo Olog
 
-Lo que se trabaja en este punto a diferencia de un esquema usual en base de datos es la forma en como se enfoca los elementos que lo componen, es decir,  si bien en un esquema usual se tiene los campos y las filas, en el esquema de tipo Olog el nombre de la tabla nos estable la relación(Que es la representación de `Función`) que tiene sus campos(Que son la representación de `Tipos`) y las filas (Son la representación de `Elementos` de los conjuntos o `Tipos`)
+Lo que se trabaja en este punto a diferencia de un esquema usual en base de datos es la forma en como se enfoca los elementos que lo componen, es decir,  si bien en un esquema usual, se tiene los campos y las filas.
 
+En el esquema de tipo Olog, el nombre de la tabla nos estable la relación (que es la representación de `Función`) que tiene sus campos (que son la representación de `Tipos`) y las filas (son la representación de `Elementos` de los conjuntos o `Tipos`)
 
 
 
