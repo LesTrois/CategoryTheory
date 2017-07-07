@@ -3,14 +3,65 @@
 
 ### Olog
 
-Es el concepto fundamental que se considera al hablar de __Teoria de la Categorización__ pues se trabaja con relaciones de conjuntos, los cuales son considerados __Tipos__.
+Es el concepto fundamental que se considera al hablar de __Teoría de la Categorización__ pues se trabaja con relaciones de conjuntos, los cuales son considerados __Tipos__.
 
 #### Tipos
-Estos `tipos`  si bien no representa a solo a un objeto, lo que hace es englobar a estas unidades representandolas como una clasa  Clase y de las cuales se relacionan con otros Tipos por las caracteristicas que poseen ellas, además de que tambien establecen relacion entre ellas por las similitudes que presentan.
+Estos `tipos`  si bien no representa a solo a un objeto, lo que hace es englobar a estas unidades representando las como una  Clase y de las cuales se relacionan con otros Tipos por las características que poseen ellas, además de que también establecen relación entre ellas por las similitudes que presentan.
 
 ## Base de Datos
 
-Una __Base de datos__ es un conjunto de información organizado y ordenados en tablas, donde las __tablas__ son un conjunto de Columnas o campos y un conjunto de __Filas__ u objetos , quienes han sido juntados debido a las caracteristicas similares que presentan que nos hace relacionarlo con el concepto abstracto `Tipo`.
+Una __Base de datos__ es un conjunto de información organizado y ordenados en tablas, donde las __tablas__ son un conjunto de Columnas o campos y un conjunto de __Filas__ u objetos , quienes han sido juntados debido a las características similares que presentan que nos hace relacionarlo con el concepto abstracto `Tipo`.
+
+## Esquema de tipo Olog
+
+Lo que se trabaja en este punto a diferencia de un esquema usual en base de datos es la forma en como se enfoca los elementos que lo componen, es decir,  si bien en un esquema usual se tiene los campos y las filas, en el esquema de tipo Olog el nombre de la tabla nos estable la relación(Que es la representación de `Función`) que tiene sus campos(Que son la representación de `Tipos`) y las filas (Son la representación de `Elementos` de los conjuntos o `Tipos`)
+
+
+
+
+###### Nombre de tabla: Orbita
+
+<table border="1" class="dataframe">
+
+  <thead>
+    <tr style="text-align: right;">
+      <th> </th>
+      <th>Una luna</th>
+      <th>Un Planeta</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>La luna</td>
+      <td>Tierra</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Phobos</td>
+      <td>Marte</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Deimos</td>
+      <td>Marte</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Ganymede</td>
+      <td>Jupiter</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Titan</td>
+      <td>Saturno</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
 
 
 ```python
@@ -182,7 +233,7 @@ crime.head()
 
 
 
-## Operación de selección 
+## Operación de selección(Sigma)
 En el tabla consultaremos los crimenes que ocurrieron en el distrito 5.
 
 
@@ -347,7 +398,7 @@ cd5
 
 
 
-## Proyección
+## Proyección(Pi)
 
 
 ```python
