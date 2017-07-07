@@ -82,6 +82,75 @@ type(crime)
     blaze.interactive._Data
 
 
+```python
+ubicacion=crime[['address','district']]
+ubicacion.head()
+```
+
+
+##### ubicación
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>address</th>
+      <th>district</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3108 OCCIDENTAL DR</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2082 EXPEDITION WAY</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4 PALEN CT</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>22 BECKFORD CT</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>3421 AUBURN BLVD</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5301 BONNIEMAE WAY</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2217 16TH AVE</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>3547 P ST</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>3421 AUBURN BLVD</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>1326 HELMSMAN WAY</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Tabla de Crimenes
 
@@ -235,6 +304,7 @@ crime.head()
 
 
 ## Operación de selección(Sigma)
+Esta operación nos permite seleccionar un subconjunto de tuplas de una relación, que cumple cumplen con una condición.
 En la tabla consultaremos los crímenes que ocurrieron en el distrito 5.
 
 
@@ -400,7 +470,7 @@ cd5
 
 
 ## Proyección(Pi)
-
+Nos permite extraer las columnas o campos de una relación.
 
 ```python
 crime[['address','crimedescr','latitude','longitude']].head()
@@ -496,7 +566,7 @@ crime[['address','crimedescr','latitude','longitude']].head()
 
 
 ## Group by
-
+Nos permite agrupar un conjunto de resultados en función de un campo determinado y realizar operaciones con los otros campos.
 
 ```python
 by(crime.district,latitude=crime.latitude.mean())
@@ -550,7 +620,7 @@ by(crime.district,latitude=crime.latitude.mean())
 
 
 ## Join
-
+Nos permite realizar la union 
 
 ```python
 join(crime,cd5,'address')
