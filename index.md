@@ -235,7 +235,7 @@ crime.head()
 
 
 ## Operación de selección(Sigma)
-En el tabla consultaremos los crimenes que ocurrieron en el distrito 5.
+En la tabla consultaremos los crímenes que ocurrieron en el distrito 5.
 
 
 ```python
